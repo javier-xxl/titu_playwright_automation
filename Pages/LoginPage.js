@@ -6,7 +6,7 @@ export class LoginPage{
     this.Password = page.locator('input[name="password"]')
     this.loginBtn = page.locator('input[name="login"]')
     }
-    // Método que realiza la acción de login
+    // Método que realiza la acción de login(prueba)
     async login(username,Password){
         await this.username.fill(username)
         await this.Password.fill(Password)
