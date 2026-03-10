@@ -17,7 +17,7 @@ test('test_login', async ({ page }) => {
 
 //await expect(page).toHaveURL('https://carchivos-web-dev.titularizadora.com/dashboard/index');
 await expect(page.getByText('Configuración')).toBeVisible();
-expect(await DashboardPage.isDashboardPageVisible()).toBe(true)
+expect(await dashboardPage.isDashboardVisible()).toBe(true)
 
 
 });
