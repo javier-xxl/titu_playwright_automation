@@ -1,2 +1,23 @@
 <img src="assets/images/logo/titularizadora.png" alt="logo" class="w-[300px]">  
 
+unning 1 test using 1 worker
+  1) [chromium] › tests\test\Login.spec.js:6:1 › test_login ────────────────────────────────────────
+
+    TypeError: page.getBytext is not a function
+
+       at ..\Pages\DashboardPage.js:4
+
+      2 |     constructor(page){
+      3 |         this.page = page
+    > 4 |         this.menuInicio = page.getBytext('Inicio')
+        |                                ^
+      5 |     }
+      6 |
+      7 |     async isDashboardVisible(){
+        at DashboardPage (C:\Users\FranciscoJavierGutie\OneDrive - CETUS Holding\Escritorio\Titu_automa\Pages\DashboardPage.js:4:32)
+        at C:\Users\FranciscoJavierGutie\OneDrive - CETUS Holding\Escritorio\Titu_automa\tests\test\Login.spec.js:11:25
+
+    Error Context: test-results\test-Login-test-login-chromium\error-context.md
+
+  1 failed
+    [chromium] › tests\test\Login.spec.js:6:1 › test_login ─────────────────────────────────────────
