@@ -1,7 +1,7 @@
 export class DashboardPage{
     constructor(page){
         this.page = page
-        this.menuInicio = page.getByText('Inicio ')
+        this.menuInicio = page.locator('span:has-text("Inicio")').first()
     }
 
     async isDashboardVisible(){
