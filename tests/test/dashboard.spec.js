@@ -8,7 +8,8 @@ await page.goto('https://carchivos-web-dev.titularizadora.com/dashboard/index');
 
 const dashboardPage = new DashboardPage(page)
 
-await expect(dashboardPage.menuInicio).toBeVisible(true)
-
+await page.waitForURL(/dashboard/);
+await expect(dashboardPage.menuInicio).toBeVisible()
+await expect(dashboardPage.menuConfiguracion).toBeVisible()
 
 });
