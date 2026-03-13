@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { ConfigurationPage } from '../../Pages/ConfigurationPage';
+import { ConfiguraciónPage } from '../../Pages/Configuracionpage';
 
 const paginas = [
 
@@ -64,7 +64,9 @@ test(`Validar ${pagina.nombre}`, async ({ page }) => {
 
   await page.goto('https://carchivos-web-dev.titularizadora.com/dashboard/index');
 
-  const configurationPage = new ConfigurationPage(page);
+  const configurationPage = new ConfiguraciónPage (page);
+
+  await page.getByText('Configuración').click();
 
   await page.locator('a',{hasText: pagina.menu}).click();
 
@@ -75,7 +77,7 @@ test(`Validar ${pagina.nombre}`, async ({ page }) => {
   await expect(page.locator('.card-subtitle'))
   .toHaveText(pagina.subtitulo);
 
-  await configurationPage.validarTarjetas(pagina.tarjetas);
+  await ConfiguraciónPage.validartarjetas(pagina.tarjetas);
 
 });
 

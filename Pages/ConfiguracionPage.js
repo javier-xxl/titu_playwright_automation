@@ -4,12 +4,12 @@ export class ConfiguraciónPage{
         this.page = page
 
         //menu Configuracion
-        this.menuConfiguracion = page.getBytext('Configuración')
+        this.menuConfiguracion = page.getByText('Configuración')
 
-        this.menuTiposReporsitorios = page.getBytext('Tipos de repositorios')
-        this.menuTiposArchivos = page.getBytext('Tipos de archivos')
-        this.menuTiposValidacion = page.getBytext('Tipos de validación')
-        this.menuTiposDatos = page.getBytext('Tipos de datos')
+        this.menuTiposReporsitorios = page.getByText('Tipos de repositorios')
+        this.menuTiposArchivos = page.getByText('Tipos de archivos')
+        this.menuTiposValidacion = page.getByText('Tipos de validación')
+        this.menuTiposDatos = page.getByText('Tipos de datos')
 
         this.subtitulo = page.locator('.card-subtitle')
     }
