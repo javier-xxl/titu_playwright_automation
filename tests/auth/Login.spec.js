@@ -8,6 +8,7 @@ test('login', async ({ page }) => {
   await page.goto('https://iam-test.titularizadora.com/realms/titularizadora/protocol/openid-connect/auth?client_id=archivos-client&redirect_uri=https%3A%2F%2Fcarchivos-web-dev.titularizadora.com%2Fdashboard%2Findex&response_type=code&scope=openid&response_mode=query');
 
   const loginPage = new LoginPage(page);
+  const dashboardpage = new DashboardPage(page)
 
   await loginPage.login(
     'wcontreras@titularizadora.com',
@@ -15,7 +16,7 @@ test('login', async ({ page }) => {
   );
 await page.waitForURL(/dashboard/);
 await page.context().storageState({path: 'storageState.json'})
-await expect(dashboardPage.menuInicio).toBeVisible();
+await expect(dashboardpage.menuInicio).toBeVisible()
 
 
 
