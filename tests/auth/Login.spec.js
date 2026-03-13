@@ -15,7 +15,7 @@ test('login', async ({ page }) => {
   );
 await page.waitForURL(/dashboard/);
 await page.context().storageState({path: 'storageState.json'})
-await expect(page.getByText('Configuración')).toBeVisible();
+await expect(dashboardPage.menuInicio).toBeVisible();
 
 
 
