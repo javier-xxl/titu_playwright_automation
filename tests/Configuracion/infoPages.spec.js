@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { ConfiguracionPage } from '../../Pages/ConfiguracionPage';
+import { ConfiguracionPage } from '../../Pages/Configuracionpage';
 
 const paginas = [
 
@@ -30,14 +30,14 @@ tarjetas: [
 
 {
 nombre: 'Tipos De Validación',
-subtitulo: 'El sistema tiene permitido los tipos de validaciones que se muestran a continuación.',
+subtitulo: 'El sistema cuenta con los siguientes tipos de validación disponibles.',
 menu: 'Tipos De Validación',
 tarjetas: [
 { titulo: 'Campo Requerido', descripcion: 'Validación de campo obligatorio' },
 { titulo: 'Numérico', descripcion: 'Validación de valor numérico' },
 { titulo: 'Alfanumérico', descripcion: 'Validación de valor alfanumérico' },
 { titulo: 'Email', descripcion: 'Validación de formato de correo electrónico' },
-{ titulo: 'Fecha', descripcion: 'Validación de formato de fecha' },
+{ titulo: 'Formato de fecha', descripcion: 'Validación de formato de fecha' },
 { titulo: 'Expresión Regular', descripcion: 'Validación mediante expresión regular' }
 ]
 },
