@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { ConfiguraciónPage } from '../../Pages/Configuracionpage';
+import { ConfiguracionPage } from '../../Pages/ConfiguracionPage';
 
 const paginas = [
 
@@ -64,20 +64,26 @@ test(`Validar ${pagina.nombre}`, async ({ page }) => {
 
   await page.goto('https://carchivos-web-dev.titularizadora.com/dashboard/index');
 
-  const configurationPage = new ConfiguraciónPage (page);
+  const configuracionPage = new ConfiguracionPage(page);
 
-  await page.getByText('Configuración').click();
+  // abrir menú Configuración
+  await configuracionPage.menuConfiguracion.click();
 
-  await page.locator('a',{hasText: pagina.menu}).click();
+  // abrir página correspondiente
+  await page.getByText(pagina.menu).click();
 
+  // validar título
   await expect(
-    page.getByText(pagina.nombre, { exact: true })
+    page.getByText(pagina.nombre)
   ).toBeVisible();
 
-  await expect(page.locator('.card-subtitle'))
-  .toHaveText(pagina.subtitulo);
+  // validar subtítulo
+  await expect(
+    configuracionPage.subtitulo
+  ).toHaveText(pagina.subtitulo);
 
-  await ConfiguraciónPage.validartarjetas(pagina.tarjetas);
+  // validar tarjetas
+  await configuracionPage.validarTarjetas(pagina.tarjetas);
 
 });
 

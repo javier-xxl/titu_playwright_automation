@@ -1,12 +1,14 @@
 import { expect } from "@playwright/test";
-export class ConfiguraciónPage{
+
+export class ConfiguracionPage {
+
     constructor(page){
         this.page = page
 
-        //menu Configuracion
+        // menú Configuración
         this.menuConfiguracion = page.getByText('Configuración')
 
-        this.menuTiposReporsitorios = page.getByText('Tipos de repositorios')
+        this.menuTiposRepositorios = page.getByText('Tipos de repositorios')
         this.menuTiposArchivos = page.getByText('Tipos de archivos')
         this.menuTiposValidacion = page.getByText('Tipos de validación')
         this.menuTiposDatos = page.getByText('Tipos de datos')
@@ -15,10 +17,10 @@ export class ConfiguraciónPage{
     }
 
     async openRepositoryType(){
-        await this.menuTiposReporsitorios.click()
+        await this.menuTiposRepositorios.click()
     }
 
-    async openFillType(){
+    async openFileType(){
         await this.menuTiposArchivos.click()
     }
 
@@ -30,7 +32,8 @@ export class ConfiguraciónPage{
         await this.menuTiposDatos.click()
     }
 
-    async validartarjetas(tarjetas){
+    async validarTarjetas(tarjetas){
+
         for (const tarjeta of tarjetas){
 
             const card = this.page.locator('div.flex').filter({
@@ -38,10 +41,17 @@ export class ConfiguraciónPage{
             }).first()
 
             await expect(card).toBeVisible()
+
             await expect(card.locator('svg')).toBeVisible()
-            await expect(card.getBytext(tarjeta.titulo,{exact:true})).toBeVisible()
-            await expect(card.getBytext(tarjeta.descripcion,{exact:true})).toBeVisible()
+
+            await expect(
+                card.getByText(tarjeta.titulo, { exact: true })
+            ).toBeVisible()
+
+            await expect(
+                card.getByText(tarjeta.descripcion, { exact: true })
+            ).toBeVisible()
         }
     }
-}
 
+}
