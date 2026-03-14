@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "AUTH_SESSION_ID",
-      "value": "dcc3ceea-382f-48ee-8bfb-37677def3770",
+      "value": "dd85293d-f0b2-4b7a-9ef5-5f21eef22d00",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -12,7 +12,7 @@
     },
     {
       "name": "AUTH_SESSION_ID_LEGACY",
-      "value": "dcc3ceea-382f-48ee-8bfb-37677def3770",
+      "value": "dd85293d-f0b2-4b7a-9ef5-5f21eef22d00",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -32,7 +32,7 @@
     },
     {
       "name": "KEYCLOAK_IDENTITY",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM0NTY5NTcsImlhdCI6MTc3MzQyMDk1NywianRpIjoiMTU0MjU5YjgtZmE1OC00OGE0LWExNmEtMjMxNWFkYjc2MGE1IiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiJkY2MzY2VlYS0zODJmLTQ4ZWUtOGJmYi0zNzY3N2RlZjM3NzAiLCJzaWQiOiJkY2MzY2VlYS0zODJmLTQ4ZWUtOGJmYi0zNzY3N2RlZjM3NzAiLCJzdGF0ZV9jaGVja2VyIjoiMEVxRjAzZnlqcndXdGY1ZGxkbmFCLXoyOUJ3LXpMRnZVYjNWV1AwMEZ4MCJ9.uM6c5P1y-d_q7H1EnRpjwLXTruOFicVqSWPxN2d6Os4",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM0Njg1MDIsImlhdCI6MTc3MzQzMjUwMiwianRpIjoiZmQwMTY0YzQtZjhmMi00MmE1LTgzNmYtYmMxYmZjMzA1ZDEwIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiJkZDg1MjkzZC1mMGIyLTRiN2EtOWVmNS01ZjIxZWVmMjJkMDAiLCJzaWQiOiJkZDg1MjkzZC1mMGIyLTRiN2EtOWVmNS01ZjIxZWVmMjJkMDAiLCJzdGF0ZV9jaGVja2VyIjoiTTVlQVE5bGtKdEs2YktMV3RreDc5NFl2eGQwOXdDejlQSEJucjh4dng3RSJ9.fY4cBHr2RefeKIjVjJnLFoC2pHTRvldChqcbHvgZfbQ",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -42,7 +42,7 @@
     },
     {
       "name": "KEYCLOAK_IDENTITY_LEGACY",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM0NTY5NTcsImlhdCI6MTc3MzQyMDk1NywianRpIjoiMTU0MjU5YjgtZmE1OC00OGE0LWExNmEtMjMxNWFkYjc2MGE1IiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiJkY2MzY2VlYS0zODJmLTQ4ZWUtOGJmYi0zNzY3N2RlZjM3NzAiLCJzaWQiOiJkY2MzY2VlYS0zODJmLTQ4ZWUtOGJmYi0zNzY3N2RlZjM3NzAiLCJzdGF0ZV9jaGVja2VyIjoiMEVxRjAzZnlqcndXdGY1ZGxkbmFCLXoyOUJ3LXpMRnZVYjNWV1AwMEZ4MCJ9.uM6c5P1y-d_q7H1EnRpjwLXTruOFicVqSWPxN2d6Os4",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM0Njg1MDIsImlhdCI6MTc3MzQzMjUwMiwianRpIjoiZmQwMTY0YzQtZjhmMi00MmE1LTgzNmYtYmMxYmZjMzA1ZDEwIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiJkZDg1MjkzZC1mMGIyLTRiN2EtOWVmNS01ZjIxZWVmMjJkMDAiLCJzaWQiOiJkZDg1MjkzZC1mMGIyLTRiN2EtOWVmNS01ZjIxZWVmMjJkMDAiLCJzdGF0ZV9jaGVja2VyIjoiTTVlQVE5bGtKdEs2YktMV3RreDc5NFl2eGQwOXdDejlQSEJucjh4dng3RSJ9.fY4cBHr2RefeKIjVjJnLFoC2pHTRvldChqcbHvgZfbQ",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -52,46 +52,24 @@
     },
     {
       "name": "KEYCLOAK_SESSION",
-      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/dcc3ceea-382f-48ee-8bfb-37677def3770",
+      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/dd85293d-f0b2-4b7a-9ef5-5f21eef22d00",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
-      "expires": 1773456957.334293,
+      "expires": 1773468502.457942,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "KEYCLOAK_SESSION_LEGACY",
-      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/dcc3ceea-382f-48ee-8bfb-37677def3770",
+      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/dd85293d-f0b2-4b7a-9ef5-5f21eef22d00",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
-      "expires": 1773456957.334329,
+      "expires": 1773468502.457976,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     }
   ],
-  "origins": [
-    {
-      "origin": "https://carchivos-web-dev.titularizadora.com",
-      "localStorage": [
-        {
-          "name": "refreshToken",
-          "value": "U2FsdGVkX19mlnDhbmXJXFAFxy74F+tZ2lLNJp0iQuI5irVU8IqlvSXOs4HdyqhcZ0yLiyMKAVCx8TLPkzSJZ3dBeUhsQiFedfJD4xg4w2APk3azUnmpAsMIFsz268TKXKO5A9I0oQV3kbXlkr+LkC3bxMefPv+yYa2vfvV46oWe0vanIwTGmsWuzBuqZCQQ7vCQrXa7uHVtYTrfNJAfOkIO4I5Djy1/ggLTPHuhUol5MhiMpsaCcdNbWKgdy/k07pcU8jF2vpOY/ub4t+W59jRfYtYR96DgjGVfz0fjjvTrFlxjgETfeFl1N3u4577b48jNqroZN54LBDwHi3CVgXnnoxCwxeji+SjPURS7T8MA/JZt4gjKPlTp5xfkp0zl52Ta/eJvFHqBLilfJzmLCVOSXvhmj5qZ9K/rgR1Q94aFIptBwg84DzRAgw7xdYRiFePoYNvhpNf7pj8NiUa7FRXdAm+Yv+gBwjvWl7aXO6oKdPMtUa8B5rSNo94zkaxq2qTa0trNNIxsIlHPdZflwebSOJXBvK8g/+twxh9cupGyajHK+/HiJi8M7PL4I7iYColVZuOr1ed6xFKlGGuBQlY6XAetXJcP9Z7fSECVoeOz036U3SXeNh4efsGidVNtsfDRA73Uf3suoyumCax3gzouTCLQ0pWHZmbx3mmQ2P11SeBmwQNkhoHvCaqXjRTuXekOoQBqOEW5zAlq7FjQOyByMOKhJDohCAJk8tXWDeU8qZ4sW7wGdOzQ5vu1EzNQRUqoPG3OTC9j5hfN3fjbMVBA17Ob+5T+pxFcheWesVuKtqlxa7Gh3TFTOHt4gd44Kc0uZR9HU4sVPPVqXRHeW9Wx/QAhj0rkurUyBrUbOQvpHed/OfNT9n3J67f5dP+4UGNGMj2CHnUYUVF2eYYudcG2lk6ey+TdLL/qxiiupJjq96zSSvernrlQzJ7kKPXNmrJnPf4RdE8+8a5Bwc5vjTDSIlq5u8aLwTOAX+7bwb4="
-        },
-        {
-          "name": "_secure__ls__metadata",
-          "value": "ᓢ㰴䂼׀ഡ堫恩Ìࣴ䫀笢Ⱔ棠ൠ̠䌠戡ᐣ㡰ত䃎☐༏䂃ࡨ΅•〣ုီ倨怨剠ೠƀೀୀޅٌ⁐䚠ޠઠࢩ㴅ö¢㉢呎ᡰԴၥ٦㾁ᱵ໠᝵ੰuᎠᖨⰶ➰懡ᱡ屴+ਮࡥჂ䮒⡌໼㠹ɐҸᇡ䍆ࠀí䬚ሠᛠഏ䌷憠䃀ተẸ<圤䀮ဤ獠⑳硂ᵐ㈪°㙪欨悱ⱱ䁴␰Ⴅ䕅ᘠ²勊ڀ䈠椹ㆭಢ⢅ס僂ߴ㓦⪜ぢ(⿡䡠⨱⢃䃄䍁䑁ㆢ䌸Ǡ䦬䕓≡⁨ࠩ¡倠䞅ᨂ±䙡䱂∹罚ڬ冡挱Ԏ桰籡ᧇx捩埃᧬ଡ଼ἢ姌᭍䞇堼䝳崉㣼眧䨂秜὏䠇稣䃰♮٣僸㸸䝃⤔㌽䘂ӂⒶ⑲咺☣ư~ဠ "
-        },
-        {
-          "name": "authToken",
-          "value": "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"
-        },
-        {
-          "name": "idToken",
-          "value": "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"
-        }
-      ]
-    }
-  ]
+  "origins": []
 }
