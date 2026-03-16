@@ -30,6 +30,7 @@ test.skip('paginacion',async({page})=>{
     //await expect(page.getByText('SFTP')).toBeVisible();
     //await expect(page.getByText('SharePoint')).toBeVisible();
     //await expect(page.getByText('Amazon S3')).toBeVisible();
+    
     //await expect(page.getByText('REST API')).toBeVisible();
  const tarjetas_Repositorios = [
   {
