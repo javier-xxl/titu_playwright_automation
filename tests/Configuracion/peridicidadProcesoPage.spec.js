@@ -25,11 +25,11 @@ test("Configurar perioricidad del proceso", async ({ page }) => {
     "Periodicidad actualizada exitosamente",
   );
 
-  await expect(periodicidadPage.dropdownPeriodicidad).toContainText("Diaria");
+  await expect(periodicidadPrecesoPage.dropdownPeriodicidad).toContainText("Diaria");
 
-  await expect(periodicidadPage.dropdownHoraInicio).toContainText("07:00");
+  await expect(periodicidadPrecesoPage.dropdownHorainicio).toContainText("07:00");
 
-  await expect(periodicidadPage.dropdownHoraFin).toContainText("16:00");
+  await expect(periodicidadPrecesoPage.dropdownHorafin).toContainText("16:00");
 
-  await expect(periodicidadPage.dropdownIntervalo).toContainText("1 Hora");
+  await expect(periodicidadPrecesoPage.dropdownIntervalo).toContainText("1 Hora");
 });
