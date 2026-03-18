@@ -19,7 +19,7 @@ test("Configurar perioricidad del proceso", async ({ page }) => {
     dias: ["Lunes", "Martes", "Miércoles"],
   });
 
-  await page.waitForURL(/configuration/);
+  await page.waitForURL(/periodicity-process/);
 
   await expect(page.getByRole("alert")).toContainText(
     "Periodicidad actualizada exitosamente",
