@@ -8,7 +8,10 @@ test('Cargue de la pagina de entidad proceso',async({page})=>{
     const entidadProcesoPage = new EntidadProcesoPage(page);
 
 await configuracionPage.menuConfiguracion.click();
-await page.getByText('Entidad proceso').click();
+
+const opcionEntidad = page.getByText('Entidad procesos',{exact:true});
+await expect(opcionEntidad).toBeVisible();
+await opcionEntidad.click();
 
 await expect(page).toHaveURL(/entity-process/);
 
