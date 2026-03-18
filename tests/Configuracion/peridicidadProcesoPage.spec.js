@@ -1,17 +1,17 @@
 import { test, expect } from "@playwright/test";
 import { ConfiguracionPage } from "../../Pages/ConfiguracionPage";
-import { PeriodicidadPrecesoPage } from "../../Pages/PeriodicidadProcesoPage";
+import { PeriodicidadProcesoPage } from "../../Pages/PeriodicidadProcesoPage";
 
 test("Configurar perioricidad del proceso", async ({ page }) => {
   await page.goto(
     "https://carchivos-web-dev.titularizadora.com/dashboard/index",
   );
   const configuracionPage = new ConfiguracionPage(page);
-  const periodicidadPrecesoPage = new PeriodicidadPrecesoPage(page);
+  const periodicidadProcesoPage = new PeriodicidadProcesoPage(page);
 
   await configuracionPage.menuConfiguracion.click();
   await page.getByText("Periodicidad proceso").click();
-  await periodicidadPrecesoPage.ConfigurarPeriodicidad({
+  await periodicidadProcesoPage.ConfigurarPeriodicidad({
     periodicidad: "Diaria",
     horaIncio: "07:00",
     horaFin: "16:00",
@@ -25,11 +25,11 @@ test("Configurar perioricidad del proceso", async ({ page }) => {
     "Periodicidad actualizada exitosamente",
   );
 
-  await expect(periodicidadPrecesoPage.dropdownPeriodicidad).toContainText("Diaria");
+  await expect(periodicidadProcesoPage.dropdownPeriodicidad).toContainText("Diaria");
 
-  await expect(periodicidadPrecesoPage.dropdownHorainicio).toContainText("07:00");
+  await expect(periodicidadProcesoPage.dropdownHorainicio).toContainText("07:00");
 
-  await expect(periodicidadPrecesoPage.dropdownHorafin).toContainText("16:00");
+  await expect(periodicidadProcesoPage.dropdownHorafin).toContainText("16:00");
 
-  await expect(periodicidadPrecesoPage.dropdownIntervalo).toContainText("1 Hora");
+  await expect(periodicidadProcesoPage.dropdownIntervalo).toContainText("1 Hora");
 });

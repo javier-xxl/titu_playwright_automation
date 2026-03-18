@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-export class PeriodicidadPrecesoPage{
+export class PeriodicidadProcesoPage{
 
     constructor(page){
         this.page = page

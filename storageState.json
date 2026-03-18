@@ -2,7 +2,7 @@
   "cookies": [
     {
       "name": "AUTH_SESSION_ID",
-      "value": "418e0b0f-34e2-42da-b9d9-1fc632406346",
+      "value": "7333da14-8407-44c3-8132-3ff9972ea125",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -12,7 +12,7 @@
     },
     {
       "name": "AUTH_SESSION_ID_LEGACY",
-      "value": "418e0b0f-34e2-42da-b9d9-1fc632406346",
+      "value": "7333da14-8407-44c3-8132-3ff9972ea125",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -32,7 +32,7 @@
     },
     {
       "name": "KEYCLOAK_IDENTITY",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM4MjI3MjAsImlhdCI6MTc3Mzc4NjcyMCwianRpIjoiZDA5NTE4OWUtMzg3Zi00MDExLThjMjYtNGNmZmEyMzE3YmNlIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiI0MThlMGIwZi0zNGUyLTQyZGEtYjlkOS0xZmM2MzI0MDYzNDYiLCJzaWQiOiI0MThlMGIwZi0zNGUyLTQyZGEtYjlkOS0xZmM2MzI0MDYzNDYiLCJzdGF0ZV9jaGVja2VyIjoiSDZrWXlGNWFtY1JyZjU1aWp0dGpjVFJRNDhNMUduWVRKR2VUWXZfMnYzWSJ9.JD4uhmIeHQ9tj1MhnJjhSGJqeDkCRPZ3KZjSTpNegwg",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM4ODkzNTQsImlhdCI6MTc3Mzg1MzM1NCwianRpIjoiYjM3ZGE0YzQtM2MyNC00YjhhLWExNmEtMTg1NjFlMzY2YmIzIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiI3MzMzZGExNC04NDA3LTQ0YzMtODEzMi0zZmY5OTcyZWExMjUiLCJzaWQiOiI3MzMzZGExNC04NDA3LTQ0YzMtODEzMi0zZmY5OTcyZWExMjUiLCJzdGF0ZV9jaGVja2VyIjoiMUJwMXNEeUM2TnNDY0JaREhhTGtldDB4czh2a3YxbFdVNURQaTlvWGM0VSJ9.4buz3H_LW-ZxnEA7wiySuVio5rJczgVH3_WdlHlass0",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -42,7 +42,7 @@
     },
     {
       "name": "KEYCLOAK_IDENTITY_LEGACY",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM4MjI3MjAsImlhdCI6MTc3Mzc4NjcyMCwianRpIjoiZDA5NTE4OWUtMzg3Zi00MDExLThjMjYtNGNmZmEyMzE3YmNlIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiI0MThlMGIwZi0zNGUyLTQyZGEtYjlkOS0xZmM2MzI0MDYzNDYiLCJzaWQiOiI0MThlMGIwZi0zNGUyLTQyZGEtYjlkOS0xZmM2MzI0MDYzNDYiLCJzdGF0ZV9jaGVja2VyIjoiSDZrWXlGNWFtY1JyZjU1aWp0dGpjVFJRNDhNMUduWVRKR2VUWXZfMnYzWSJ9.JD4uhmIeHQ9tj1MhnJjhSGJqeDkCRPZ3KZjSTpNegwg",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3Yjg0Nzk3MC00OTg3LTRiZjQtODMyNi02OGNjMTc1MGQ3ZjcifQ.eyJleHAiOjE3NzM4ODkzNTQsImlhdCI6MTc3Mzg1MzM1NCwianRpIjoiYjM3ZGE0YzQtM2MyNC00YjhhLWExNmEtMTg1NjFlMzY2YmIzIiwiaXNzIjoiaHR0cHM6Ly9pYW0tdGVzdC50aXR1bGFyaXphZG9yYS5jb20vcmVhbG1zL3RpdHVsYXJpemFkb3JhIiwic3ViIjoiODZkOTczNjctNzc1OS00MjAyLWI4YzMtN2Y3NDQxNTBmMDZkIiwidHlwIjoiU2VyaWFsaXplZC1JRCIsInNlc3Npb25fc3RhdGUiOiI3MzMzZGExNC04NDA3LTQ0YzMtODEzMi0zZmY5OTcyZWExMjUiLCJzaWQiOiI3MzMzZGExNC04NDA3LTQ0YzMtODEzMi0zZmY5OTcyZWExMjUiLCJzdGF0ZV9jaGVja2VyIjoiMUJwMXNEeUM2TnNDY0JaREhhTGtldDB4czh2a3YxbFdVNURQaTlvWGM0VSJ9.4buz3H_LW-ZxnEA7wiySuVio5rJczgVH3_WdlHlass0",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
       "expires": -1,
@@ -52,20 +52,20 @@
     },
     {
       "name": "KEYCLOAK_SESSION",
-      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/418e0b0f-34e2-42da-b9d9-1fc632406346",
+      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/7333da14-8407-44c3-8132-3ff9972ea125",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
-      "expires": 1773822720.363867,
+      "expires": 1773889354.345329,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "KEYCLOAK_SESSION_LEGACY",
-      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/418e0b0f-34e2-42da-b9d9-1fc632406346",
+      "value": "titularizadora/86d97367-7759-4202-b8c3-7f744150f06d/7333da14-8407-44c3-8132-3ff9972ea125",
       "domain": "iam-test.titularizadora.com",
       "path": "/realms/titularizadora/",
-      "expires": 1773822720.363898,
+      "expires": 1773889354.345363,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
