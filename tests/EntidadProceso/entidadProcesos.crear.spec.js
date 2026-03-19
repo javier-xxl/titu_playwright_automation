@@ -18,7 +18,7 @@ test("Crear entidad proceso", async ({ page }) => {
 
   await entidadProcesoPage.irACrear();
 
-  await entidadProcesoPage.ingresarCorreos('test@correo.com,test2@correo.com');
+  await entidadProcesoPage.ingresarCorreos("test@correo.com,test2@correo.com");
 
   await entidadProcesoPage.seleccionarEntidad("MTI S.A - Thomas");
 
@@ -29,4 +29,7 @@ test("Crear entidad proceso", async ({ page }) => {
   await expect(page.getByRole("alert")).toContainText(
     "Se han asociados los procesos a la entidad exitosamente.",
   );
+  await entidadProcesoPage.ValidarCargue();
+
+  await entidadProcesoPage.seleccionarProceso("Proceso de pagos");
 });
