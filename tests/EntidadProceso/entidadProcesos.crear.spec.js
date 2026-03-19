@@ -20,9 +20,11 @@ test("Crear entidad proceso", async ({ page }) => {
 
   await entidadProcesoPage.ingresarCorreos("test@correo.com,test2@correo.com");
 
-  await entidadProcesoPage.seleccionarEntidad("MTI S.A - Thomas");
+  await entidadProcesoPage.seleccionarEntidad("GRANBANCO S.A.");
 
-  await entidadProcesoPage.seleccionarTodoslosprocesos();
+  await entidadProcesoPage.seleccionarProceso("Creación Activo Subyacente");
+
+  //await entidadProcesoPage.seleccionarTodoslosprocesos();
 
   await entidadProcesoPage.guardar();
 
@@ -31,5 +33,8 @@ test("Crear entidad proceso", async ({ page }) => {
   );
   await entidadProcesoPage.ValidarCargue();
 
-  await entidadProcesoPage.seleccionarProceso("Proceso de pagos");
+  await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
+
+
+  
 });

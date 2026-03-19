@@ -134,11 +134,11 @@ export class EntidadProcesoPage {
   }
 
   async seleccionarProceso(nombreProceso) {
-    const lista = this.page.locator(".cdk-overlay-pane");
+    await this.page.waitForSelector('.process-item',);
 
-    await lista.waitFor({ state: "visible" });
+    const proceso = this.page.locator('.process-item').filter({ hasText: nombreProceso }).first();
 
-    const proceso = lista.locator("text=" + nombreProceso).first();
+    await proceso.waitFor({ state: "visible" });
 
     await proceso.scrollIntoViewIfNeeded();
     await proceso.click();
