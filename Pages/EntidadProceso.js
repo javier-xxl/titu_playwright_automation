@@ -134,14 +134,23 @@ export class EntidadProcesoPage {
   }
 
   async seleccionarProceso(nombreProceso) {
-    await this.page.waitForSelector('.process-item',);
+    await this.page.waitForSelector(".process-item");
 
-    const proceso = this.page.locator('.process-item').filter({ hasText: nombreProceso }).first();
+    const proceso = this.page
+      .locator(".process-item")
+      .filter({ hasText: nombreProceso })
+      .first();
 
     await proceso.waitFor({ state: "visible" });
 
     await proceso.scrollIntoViewIfNeeded();
     await proceso.click();
+  }
+
+  async editarPrimeraFila() {
+    const botonEditar = this.filas.first().locator("button").last();
+    await botonEditar.waitFor({ state: "visible" });
+    await botonEditar.click();
   }
 }
 
