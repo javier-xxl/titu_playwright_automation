@@ -119,11 +119,15 @@ export class EntidadProcesoPage {
   }
 
   async ingresarCorreos(correos) {
-    const inputCorreos = this.page.locator("textarea").first();
+    const inputCorreos = this.page.locator("textarea[placeholder*='correos']").last();
 
     await inputCorreos.waitFor({ state: "visible" });
+    await inputCorreos.evaluate((el, value) => {el.value = value;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        el.dispatchEvent(new Event('change', { bubbles: true }));
+    },correos);
 
-    await inputCorreos.fill(correos);
+    await expect(inputCorreos).toHaveValue(correos);
   }
 }
 

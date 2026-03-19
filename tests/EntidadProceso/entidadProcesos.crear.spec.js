@@ -18,7 +18,7 @@ test("Crear entidad proceso", async ({ page }) => {
 
   await entidadProcesoPage.irACrear();
 
-  await expect(inputCorreos).toHaveValue("test@correo.com,test2@correo.com");
+  await entidadProcesoPage.ingresarCorreos('test@correo.com,test2@correo.com');
 
   await entidadProcesoPage.seleccionarEntidad("MTI S.A - Thomas");
 
