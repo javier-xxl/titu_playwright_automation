@@ -23,7 +23,7 @@ export class EntidadProcesoPage{
             'Acción'
         ]
     }
-
+//
     async ValidarColumnas(){
         for(const columna of this.columnas){
             await expect(this.header.getByRole('cell', { name: columna, exact: true })).toBeVisible()
@@ -73,8 +73,53 @@ if(filasCount > 0){
         await this.ValidarSinErrores()
         }
 
-}
 
+        async irACrear(){
+            await this.bntAgregar.click()
+            await expect(this.page.getByText('Entidad procesos / Agregar')).toBeVisible()
+        }
+        async seleccionarEntidad(nombreEntidad){
+
+            await this.page.getByText('Seleccione la entidad').click()
+
+            const overlay = this.page.locator('.cdk-overlay-pane')
+            await overlay.waitFor({ state: 'visible' })
+
+            //const selectEntidad = this.page.getByText('Seleccione la entidad')
+            //await selectEntidad.click()
+
+            const inputBuscar = overlay.locator('input').first()
+             await inputBuscar.fill(nombreEntidad)
+
+            //await this.inputBuscar.fill(nombreEntidad)
+
+        const opcion = overlay.getByText(nombreEntidad, { exact: true }).first()
+        await opcion.click()
+
+        }
+
+        async seleccionarTodoslosprocesos(){
+            const btnSeleccionarTodos = this.page.getByRole('button', { name: 'Seleccionar todos' })
+            await btnSeleccionarTodos.click()
+        }
+        async seleccionarPrimerProceso(){
+            const check = this.page.locator('input[type="checkbox"]').first()
+            await check.check()
+        }
+        async guardar(){
+            const btnGuardar = this.page.getByRole('button', { name: ' Guardar Entidad Proceso' })
+            await btnGuardar.click()
+
+        }
+
+        async cancelar(){
+            const btnCancelar = this.page.getByRole('button', { name: 'Cancelar' })
+            await btnCancelar.click()
+        }   
+    }
+
+
+    
 
 
 
