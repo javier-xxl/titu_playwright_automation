@@ -16,7 +16,7 @@ test('Crear entidad proceso',async({page})=>{
 
     await entidadProcesoPage.irACrear();
 
-    await entidadProcesoPage.seleccionarEntidad('BANCO');
+    await entidadProcesoPage.seleccionarEntidad('MTI S.A - Thomas');
 
     await entidadProcesoPage.seleccionarTodoslosprocesos();
 

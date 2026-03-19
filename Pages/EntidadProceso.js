@@ -85,7 +85,7 @@ export class EntidadProcesoPage {
   async seleccionarEntidad(nombreEntidad) {
     await this.page.getByText("Seleccione la entidad").click();
 
-    // 🔥 toma el input que aparece dinámicamente
+    
     const inputBuscar = this.page.locator("input").last();
     await inputBuscar.waitFor({ state: "visible" });
 
@@ -99,7 +99,7 @@ export class EntidadProcesoPage {
 
   async seleccionarTodoslosprocesos() {
     const btnSeleccionarTodos = this.page.getByRole("button", {
-      name: "Seleccionar todos",
+      name: " Seleccionar todo",
     });
     await btnSeleccionarTodos.click();
   }
