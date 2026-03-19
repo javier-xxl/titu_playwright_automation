@@ -22,7 +22,7 @@ test("Crear entidad proceso", async ({ page }) => {
 
   await entidadProcesoPage.seleccionarEntidad("GRANBANCO S.A.");
 
-  await entidadProcesoPage.seleccionarProceso("Creación Activo Subyacente");
+  await entidadProcesoPage.seleccionarProceso("Cálculo del Valor de las Garantías");
 
   //await entidadProcesoPage.seleccionarTodoslosprocesos();
 
