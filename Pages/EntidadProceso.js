@@ -119,15 +119,29 @@ export class EntidadProcesoPage {
   }
 
   async ingresarCorreos(correos) {
-    const inputCorreos = this.page.locator("textarea[placeholder*='correos']").last();
+    const inputCorreos = this.page
+      .locator("textarea[placeholder*='correos']")
+      .last();
 
     await inputCorreos.waitFor({ state: "visible" });
-    await inputCorreos.evaluate((el, value) => {el.value = value;
-        el.dispatchEvent(new Event('input', { bubbles: true }));
-        el.dispatchEvent(new Event('change', { bubbles: true }));
-    },correos);
+    await inputCorreos.evaluate((el, value) => {
+      el.value = value;
+      el.dispatchEvent(new Event("input", { bubbles: true }));
+      el.dispatchEvent(new Event("change", { bubbles: true }));
+    }, correos);
 
     await expect(inputCorreos).toHaveValue(correos);
+  }
+
+  async seleccionarProceso(nombreProceso) {
+    const lista = this.page.locator(".cdk-overlay-pane");
+
+    await lista.waitFor({ state: "visible" });
+
+    const proceso = lista.locator("text=" + nombreProceso).first();
+
+    await proceso.scrollIntoViewIfNeeded();
+    await proceso.click();
   }
 }
 
