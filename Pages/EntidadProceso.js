@@ -85,7 +85,6 @@ export class EntidadProcesoPage {
   async seleccionarEntidad(nombreEntidad) {
     await this.page.getByText("Seleccione la entidad").click();
 
-    
     const inputBuscar = this.page.locator("input").last();
     await inputBuscar.waitFor({ state: "visible" });
 
@@ -117,6 +116,14 @@ export class EntidadProcesoPage {
   async cancelar() {
     const btnCancelar = this.page.getByRole("button", { name: "Cancelar" });
     await btnCancelar.click();
+  }
+
+  async ingresarCorreos(correos) {
+    const inputCorreos = this.page.locator("textarea").first();
+
+    await inputCorreos.waitFor({ state: "visible" });
+
+    await inputCorreos.fill(correos);
   }
 }
 
