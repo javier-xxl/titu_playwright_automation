@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { ConfiguracionPageg } from "../../Pages/ConfiguracionPage";
+import { ConfiguracionPage } from "../../Pages/ConfiguracionPage";
 
 const paginas = [
   {
