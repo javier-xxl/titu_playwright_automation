@@ -168,7 +168,13 @@ async confirmarEliminacion() {
 
 async SelecionarProcesoRamdom(){
   const procesos = this.page.locator(".process-item:not(.disabled)");
+
+  await this.page.waitForSelector(".process-item", {timeout: 10000});
   const total = await procesos.count();
+
+  if (total === 0) {
+    throw new Error("No hay procesos disponibles para seleccionar.");
+  }
   const randomIndex = Math.floor(Math.random() * total);
 
   const procesoRandom = procesos.nth(randomIndex);

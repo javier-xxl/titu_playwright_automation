@@ -27,7 +27,7 @@ test("Crear entidad proceso", async ({ page }) => {
   //await entidadProcesoPage.seleccionarTodoslosprocesos();
 
   //Seleccionar un proceso aleatorio de la lista
- const entidad ='GRANBANCO S.A.';
+ const entidad ='BBVA COLOMBIA';
  await entidadProcesoPage.seleccionarEntidad(entidad);
  const proceso = await entidadProcesoPage.SelecionarProcesoRamdom();
 
