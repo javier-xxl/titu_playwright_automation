@@ -19,12 +19,17 @@ test("Crear entidad proceso", async ({ page }) => {
   await entidadProcesoPage.irACrear();
 
   await entidadProcesoPage.ingresarCorreos("test@correo.com,test2@correo.com");
+  // Seleccionar entidad especifica y proceso especifico
+  //await entidadProcesoPage.seleccionarEntidad("GRANBANCO S.A.");
+  //await entidadProcesoPage.seleccionarProceso("Cálculo del Valor de las Garantías");
 
-  await entidadProcesoPage.seleccionarEntidad("GRANBANCO S.A.");
-
-  await entidadProcesoPage.seleccionarProceso("Cálculo del Valor de las Garantías");
-
+  //Seleccionar todos los procesos de la lista
   //await entidadProcesoPage.seleccionarTodoslosprocesos();
+
+  //Seleccionar un proceso aleatorio de la lista
+ const entidad ='GRANBANCO S.A.';
+ await entidadProcesoPage.seleccionarEntidad(entidad);
+ const proceso = await entidadProcesoPage.SelecionarProcesoRamdom();
 
   await entidadProcesoPage.guardar();
 
@@ -33,14 +38,17 @@ test("Crear entidad proceso", async ({ page }) => {
   );
   await entidadProcesoPage.ValidarCargue();
 
-  await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
+  await entidadProcesoPage.inputBuscar.fill("");
+  await entidadProcesoPage.inputBuscar.fill(entidad);
 
-  const entidad = 'GRANBANCO S.A.';
-  const proceso = 'Cálculo del Valor de las Garantías';
+await expect(entidadProcesoPage.filas.filter({ hasText: entidad }).filter({ hasText: proceso })).toBeVisible({ timeout: 10000 });
 
-  const fila = entidadProcesoPage.filas.filter({ hasText: entidad }).filter({ hasText: proceso });
-
-  await expect(fila).toBeVisible();
+//Validar dorde se encuentra la entidad y proceso creado espesifico
+  //await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
+  //const entidad = 'GRANBANCO S.A.';
+  //const proceso = 'Cálculo del Valor de las Garantías';
+  //const fila = entidadProcesoPage.filas.filter({ hasText: entidad }).filter({ hasText: proceso });
+  //await expect(fila).toBeVisible();
   
 
 });

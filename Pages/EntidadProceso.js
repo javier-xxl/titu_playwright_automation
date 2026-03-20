@@ -165,6 +165,18 @@ async confirmarEliminacion() {
     await btnEliminar.waitFor({ state: "visible" });
     await btnEliminar.click();
 }
+
+async SelecionarProcesoRamdom(){
+  const procesos = this.page.locator(".process-item:not(.disabled)");
+  const total = await procesos.count();
+  const randomIndex = Math.floor(Math.random() * total);
+
+  const procesoRandom = procesos.nth(randomIndex);
+
+  const nombreProceso = await procesoRandom.locator(".process-name").innerText();
+  await procesoRandom.click();
+  return nombreProceso.trim();
+}
 }
 //CAMBIOS REALIZADOS:
 
