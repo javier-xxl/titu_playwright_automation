@@ -19,7 +19,7 @@ test('Eliminar Primer Registro', async ({page}) => {
     const totalAntes= await entidadProcesoPage.filas.count();
     expect(totalAntes).toBeGreaterThan(0);
 
-    const textAntes = await entidadProcesoPage.filas.first().TextContents();
+    const textAntes = await entidadProcesoPage.filas.first().textContent();
     await entidadProcesoPage.eliminarprimeraFila();
     await entidadProcesoPage.confirmarEliminacion();
     await expect(page.getByRole("alert")).toContainText('Proceso eliminado exitosamente.');
