@@ -35,4 +35,12 @@ test("Crear entidad proceso", async ({ page }) => {
 
   await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
 
+  const entidad = 'GRANBANCO S.A.';
+  const proceso = 'Cálculo del Valor de las Garantías';
+
+  const fila = entidadProcesoPage.filas.filter({ hasText: entidad }).filter({ hasText: proceso });
+
+  await expect(fila).toBeVisible();
+  
+
 });
