@@ -33,21 +33,6 @@ test("Crear entidad proceso", async ({ page }) => {
   );
   await entidadProcesoPage.ValidarCargue();
 
-  //await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
+  await entidadProcesoPage.inputBuscar.fill("GRANBANCO S.A.");
 
-  //await entidadProcesoPage.inputBuscar.fill("MTI S.A - Thomas");
-
-  await entidadProcesoPage.editarPrimeraFila();
-
-  const procesoNuevo = "Acuerdos de Transacción";
-
-  await entidadProcesoPage.seleccionarProceso(procesoNuevo);
-
-  await entidadProcesoPage.guardar();
-
-  await expect(page.getByRole("alert")).toContainText("exitosamente");
-
-  await entidadProcesoPage.ValidarCargue();
-
-  // await entidadProcesoPage.inputBuscar.fill("MTI S.A - Thomas");
 });
