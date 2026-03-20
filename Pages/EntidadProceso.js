@@ -147,20 +147,12 @@ export class EntidadProcesoPage {
     await proceso.click();
   }
 
-<<<<<<< HEAD
-  async editarPrimeraFila() {
-    const botonEditar = this.filas.first().locator("button").last();
-    await botonEditar.waitFor({ state: "visible" });
-    await botonEditar.click();
-  }
-=======
   async eliminarprimeraFila() {
     const fila = this.filas.first();
 
     const botnEliminar = fila.locator('button').filter({ has: this.page.locator('app-ui-icon svg')}).last();
     await botnEliminar.waitFor({ state: "visible" });
     await botnEliminar.click();
->>>>>>> 47a5a48f6bcb2b373c6577a517ae9c05401212b0
 }
 
 async confirmarEliminacion() {
