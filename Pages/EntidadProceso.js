@@ -143,8 +143,26 @@ export class EntidadProcesoPage {
     await proceso.scrollIntoViewIfNeeded();
     await proceso.click();
   }
+
+  async eliminarprimeraFila() {
+    const fila = this.filas.first();
+
+    const botnEliminar = fila.locator('button').filter({ has: this.page.locator('app-ui-icon svg')}).last();
+    await botnEliminar.waitFor({ state: "visible" });
+    await botnEliminar.click();
 }
 
+async confirmarEliminacion() {
+    const modal = this.page.locator('.container-content-modal');
+    await modal.waitFor({ state: "visible" });
+
+    await expect(modal.getByText('¿Eliminar proceso?')).toBeVisible();
+
+    const btnEliminar = modal.getByRole('button', { name: 'Eliminar' });
+    await btnEliminar.waitFor({ state: "visible" });
+    await btnEliminar.click();
+}
+}
 //CAMBIOS REALIZADOS:
 
 //this.celdas = page.locator('[role="cell"]')
